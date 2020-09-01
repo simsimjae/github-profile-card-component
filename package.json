@@ -1,0 +1,48 @@
+{
+	"name": "github-profile-card",
+	"version": "1.0.0",
+	"description": "minimal github profile card",
+	"main": "dist/ProfileCard.js",
+	"scripts": {
+		"clean": "rm -rf ./dist",
+		"tsc": "tsc",
+		"build": "yarn clean && parcel build ./src/ProfileCard/ProfileCard.tsx --no-content-hash",
+		"start": "yarn clean && parcel ./src/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/simsimjae/github-profile-card.git"
+	},
+	"keywords": [
+		"profile",
+		"component",
+		"react",
+		"github",
+		"markdown",
+		"readme"
+	],
+	"author": {
+		"name": "Sim Jae Cheol",
+		"email": "simsimjae@naver.com",
+		"url": "https://github.com/simsimjae"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/simsimjae/github-profile-card/issues"
+	},
+	"homepage": "https://github.com/simsimjae/github-profile-card#readme",
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-google-font-loader": "^1.1.0",
+		"styled-components": "^5.1.1"
+	},
+	"devDependencies": {
+		"@types/react": "^16.9.49",
+		"@types/react-dom": "^16.9.8",
+		"@types/styled-components": "^5.1.2",
+		"parcel-bundler": "^1.12.4",
+		"tsc": "^1.20150623.0",
+		"typescript": "^4.0.2"
+	}
+}
