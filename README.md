@@ -50,6 +50,7 @@ followerCount?: number; // fallback follower count
 followingCount?: number; // fallback following count
 introduce?: string; // fallback introduce yourself
 onClickCard?: (...p: any[]) => any; // (default) go to github
+isSSR?: boolean; // (default) false, should component render in server
 ```
 
 ## License
