@@ -13,7 +13,9 @@ npm install -S github-profile-card-component
 Github Users Api responses are displayed and props are displayed as fallback when the api call fails.
 
 ![image](https://user-images.githubusercontent.com/29771088/91936270-7f65aa80-ed2a-11ea-8f12-a33a066b0359.png)
-<script src="http://gist-it.appspot.com/https://codesandbox.io/embed/github-profile-card-component-12ybr?fontsize=14&hidenavigation=1&theme=dark"></script>
+
+[![Edit github-profile-card-component](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github-profile-card-component-12ybr?fontsize=14&hidenavigation=1&theme=dark)
+
 ### Props
 
 ```js
