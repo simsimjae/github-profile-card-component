@@ -14,12 +14,14 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
 	overflow: hidden;
 	box-sizing: border-box;
 	margin: 0 auto;
+	cursor: pointer;
 
 	.left {
 		width: 50%;
 		img {
 			width: 100%;
 			height: 100%;
+			object-fit: cover;
 		}
 	}
 	.right {
@@ -35,6 +37,7 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
 		font-weight: bold;
 		margin: 0;
 	}
+
 	.id {
 		font-size: 16px;
 		opacity: 0.5;
@@ -66,6 +69,7 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
 		font-size: 20px;
 		margin-top: 5px;
 	}
+
 	.introduce {
 		margin: 0;
 		word-wrap: break-word;
@@ -73,5 +77,7 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+		text-align: center;
+		line-height: 1.3;
 	}
 `;

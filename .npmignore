@@ -1,2 +1,7 @@
-dist/index.html
-node_modules
+node_modules/
+test
+src
+.cache
+yarn.lock
+tsconfig.json
+dist
