@@ -2,4 +2,5 @@ import ProfileCard from "./ProfileCard/ProfileCard";
 import ReactDOM from "react-dom";
 import React from "react";
 
-ReactDOM.render(<ProfileCard />, document.getElementById("github-profile-card"));
+const profileElement = document.getElementById("github-profile-card");
+ReactDOM.render(<ProfileCard {...profileElement.dataset} />, profileElement);

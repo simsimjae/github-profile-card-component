@@ -24,12 +24,16 @@ const ProfileCard = (props: ProfileCardProps) => {
 
 	useEffect(() => {
 		(async () => {
-			const Axios = axios.create({
-				baseURL: "https://api.github.com/users",
-				auth: { username: "d93bbed6abb05249b568", password: "d29ba5732f3672cd20a16f4f16900666c29a09b0" }
-			});
-			const profile = (await Axios.get(`/${id}`)).data;
-			setProfile(profile);
+			try {
+				const Axios = axios.create({
+					baseURL: "https://api.github.com/users",
+					auth: { username: "d93bbed6abb05249b568", password: "d29ba5732f3672cd20a16f4f16900666c29a09b0" }
+				});
+				const profile = (await Axios.get(`/${id}`)).data;
+				setProfile(profile);
+			} catch (e) {
+				console.error(e);
+			}
 			setIsMount(true);
 		})();
 	}, []);
