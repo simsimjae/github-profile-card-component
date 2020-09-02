@@ -29,7 +29,7 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		padding: 0 40px;
+		padding: 0 20px;
 	}
 
 	.name {
@@ -61,7 +61,7 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
 	}
 
 	.info_title {
-		font-size: 16px;
+		font-size: 14px;
 		opacity: 0.5;
 	}
 

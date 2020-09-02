@@ -86,7 +86,7 @@ const ProfileCard = (props: ProfileCardProps) => {
 
 ProfileCard.defaultProps = {
 	width: "600px",
-	height: "300px",
+	height: "280px",
 	color: "#26273B",
 	name: "Jae Cheol Sim",
 	id: "simsimjae",
