@@ -12,7 +12,7 @@ npm install -S github-profile-card-component
 
 Github Users Api responses are displayed and props are displayed as fallback when the api call fails.
 
-![](images/2020_09_02_14_35_51.png)
+![image](https://user-images.githubusercontent.com/29771088/91936270-7f65aa80-ed2a-11ea-8f12-a33a066b0359.png)
 
 ### Props
 
