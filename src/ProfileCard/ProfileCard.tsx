@@ -46,12 +46,14 @@ const ProfileCard = (props: ProfileCardProps) => {
 
 	return (
 		<>
-			<GoogleFontLoader
-				fonts={[
-					{ font: "Roboto", weights: [400, 700] },
-					{ font: "Noto Sans KR", weights: [400, 700] }
-				]}
-			/>
+			{window && window.document && (
+				<GoogleFontLoader
+					fonts={[
+						{ font: "Roboto", weights: [400, 700] },
+						{ font: "Noto Sans KR", weights: [400, 700] }
+					]}
+				/>
+			)}
 			{isMount && (
 				<ProfileCardStyled width={width} height={height} color={color} onClick={props.onClickCard || onClickCard}>
 					<div className="left">
