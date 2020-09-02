@@ -14,6 +14,7 @@ Github Users Api responses are displayed and props are displayed as fallback whe
 
 ![image](https://user-images.githubusercontent.com/29771088/91936270-7f65aa80-ed2a-11ea-8f12-a33a066b0359.png)
 
+<<<<<<< HEAD
 ## Scripts
 
 ```js
@@ -23,6 +24,8 @@ Github Users Api responses are displayed and props are displayed as fallback whe
 
 ## Components
 
+=======
+>>>>>>> 46d87d875764d80e6ceacae8ff1b6a16493e0b41
 [![Edit github-profile-card-component](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github-profile-card-component-12ybr?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Props
