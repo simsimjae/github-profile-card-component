@@ -1,13 +1,14 @@
 {
 	"name": "github-profile-card-component",
-	"version": "1.0.10",
+	"version": "1.0.12",
 	"description": "minimal github profile card",
-	"types": "lib/ProfileCard/ProfileCard.d.ts",
-	"main": "lib/ProfileCard/ProfileCard.js",
+	"types": "lib/ProfileCard.d.ts",
+	"main": "lib/ProfileCard.js",
 	"scripts": {
 		"clean": "rm -rf ./lib",
 		"tsc": "tsc",
-		"build": "yarn clean && tsc",
+		"bundle": "parcel build ./src/index.tsx --no-content-hash --out-dir ./lib/scripts",
+		"build": "yarn clean && tsc && yarn bundle",
 		"start": "parcel ./src/index.html"
 	},
 	"repository": {
@@ -34,6 +35,7 @@
 	"homepage": "https://github.com/simsimjae/github-profile-card#readme",
 	"dependencies": {
 		"axios": "^0.20.0",
+		"module-to-cdn": "^3.1.5",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-google-font-loader": "^1.1.0",

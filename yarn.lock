@@ -3396,6 +3396,13 @@ mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
+module-to-cdn@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/module-to-cdn/-/module-to-cdn-3.1.5.tgz#f3e518e881e41841462f709e40e6d80805bddedd"
+  integrity sha512-4gWp4NXTzJ+zjHA8aVjexMNZ83cfDCb6OWD3XDRsfXJtXDPTibgB4gYZbROB6kDPVElwZmCp4TnLY6pFWk4K3A==
+  dependencies:
+    semver "^6.0.0"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -4590,6 +4597,11 @@ semver@^5.4.1, semver@^5.5.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
+
+semver@^6.0.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
+  integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
 send@0.17.1:
   version "0.17.1"
