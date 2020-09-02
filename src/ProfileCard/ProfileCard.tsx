@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { ProfileCardStyled } from "./ProfileCard.styles";
 import GoogleFontLoader from "react-google-font-loader";
 import axios from "axios";
+import root from "window-or-global";
 
 export interface ProfileCardProps {
 	width: string;
@@ -41,12 +42,12 @@ const ProfileCard = (props: ProfileCardProps) => {
 	const onClickCard = useCallback(() => {
 		if (!profile) return;
 
-		window.location = profile.html_url;
+		root.location = profile.html_url;
 	}, [profile]);
 
 	return (
 		<>
-			{window && window.document && (
+			{root && root.document && (
 				<GoogleFontLoader
 					fonts={[
 						{ font: "Roboto", weights: [400, 700] },
