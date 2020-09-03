@@ -101,7 +101,7 @@ ProfileCard.defaultProps = {
   followerCount: 487,
   introduce: "이곳에는 자기소개를 입력해주세요 세줄이 넘어가면 자동으로 말줄임 처리 됩니다. 단 세줄로 자신을 표현해보세요. made by simsimjae",
   isSSR: false,
-  isCircleImage: false,
+  isCircleImage: true,
 };
 
 export default ProfileCard;

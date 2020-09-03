@@ -20,13 +20,12 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding: ${(props) => (props.isCircleImage ? "2%" : "0")};
     img {
       width: 100%;
-      padding-bottom: ${(props) => (props.isCircleImage ? "100%" : "")};
-      object-fit: cover;
-      border-radius: ${(props) => (props.isCircleImage ? "50%" : "")};
-      padding: ${(props) => (props.isCircleImage ? "5%" : "")};
-      box-sizing: border-box;
+      height: 100%;
+      object-fit: contain;
+      border-radius: ${(props) => (props.isCircleImage ? "50%" : "0")};
     }
   }
   .right {
