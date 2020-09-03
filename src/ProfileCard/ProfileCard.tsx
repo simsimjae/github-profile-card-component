@@ -17,10 +17,11 @@ export interface ProfileCardProps {
   introduce?: string; // fallback introduce yourself
   onClickCard?: (...p: any[]) => any; // (default) go to github
   isSSR?: boolean; // (default) false, should component render in server
+  isCircleImage?: boolean; // (default) false
 }
 
 const ProfileCard = (props: ProfileCardProps) => {
-  const { width, height, color, name, id, profileSrc, repositoryCount, followerCount, followingCount, introduce } = props;
+  const { width, height, color, name, id, profileSrc, repositoryCount, followerCount, followingCount, introduce, isCircleImage } = props;
   const [profile, setProfile] = useState<any>(null);
   const [isMount, setIsMount] = useState(false);
 
@@ -57,7 +58,7 @@ const ProfileCard = (props: ProfileCardProps) => {
         />
       )}
       {(props.isSSR || isMount) && (
-        <ProfileCardStyled width={width} height={height} color={color} onClick={props.onClickCard || onClickCard}>
+        <ProfileCardStyled width={width} height={height} color={color} onClick={props.onClickCard || onClickCard} isCircleImage={isCircleImage}>
           <div className="left">
             <img src={(profile && profile.avatar_url) || profileSrc} alt="profile image" />
           </div>
@@ -100,6 +101,7 @@ ProfileCard.defaultProps = {
   followerCount: 487,
   introduce: "이곳에는 자기소개를 입력해주세요 세줄이 넘어가면 자동으로 말줄임 처리 됩니다. 단 세줄로 자신을 표현해보세요. made by simsimjae",
   isSSR: false,
+  isCircleImage: false,
 };
 
 export default ProfileCard;

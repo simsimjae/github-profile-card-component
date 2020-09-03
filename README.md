@@ -51,6 +51,7 @@ followingCount?: number; // fallback following count
 introduce?: string; // fallback introduce yourself
 onClickCard?: (...p: any[]) => any; // (default) go to github
 isSSR?: boolean; // (default) false, should component render in server
+isCircleImage?: boolean; // (default) false
 ```
 
 ## License
