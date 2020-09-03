@@ -21,9 +21,19 @@ export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
     align-items: center;
     width: 50%;
     padding: ${(props) => (props.isCircleImage ? "2%" : "0")};
-    img {
+    .image_area {
       width: 100%;
-      height: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      position: relative;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: ${(props) => (props.isCircleImage ? "90%" : "100%")};
+      height: ${(props) => (props.isCircleImage ? "90%" : "100%")};
       object-fit: contain;
       border-radius: ${(props) => (props.isCircleImage ? "50%" : "0")};
     }
