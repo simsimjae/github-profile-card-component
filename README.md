@@ -1,6 +1,6 @@
 # github-profile-card-component
 
-simple and pretty Github profile card. It is made of react and type script.
+Simple Github Profile Card. It is made of React and Typescript.
 
 ## Install
 
