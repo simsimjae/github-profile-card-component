@@ -41,6 +41,7 @@ Github Users Api responses are displayed and props are displayed as fallback whe
 ```js
 width: string;
 height: string;
+background: string; // card theme background
 color: string; // card theme color
 name?: string; // (fallback) github name
 id: string; // (required) github id
