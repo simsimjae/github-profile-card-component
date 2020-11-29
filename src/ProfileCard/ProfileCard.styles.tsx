@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { ProfileCardProps } from "./ProfileCard";
 
-type ProfileCardStyledProps = Pick<ProfileCardProps, "width" | "height" | "color" | "isCircleImage">;
+type ProfileCardStyledProps = Pick<ProfileCardProps, "width" | "height" | "background" | "color" | "isCircleImage">;
 
 export const ProfileCardStyled = styled.div<ProfileCardStyledProps>`
   display: flex;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
+  background: ${(props) => props.background};
   color: ${(props) => props.color};
   border-radius: 12px;
   font-family: Roboto, "Noto Sans KR", sans-serif;

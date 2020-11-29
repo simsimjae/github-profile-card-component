@@ -7,6 +7,7 @@ import root from "window-or-global";
 export interface ProfileCardProps {
   width: string;
   height: string;
+  background: string; // card theme background
   color: string; // card theme color
   name?: string; // (fallback) github name
   id: string; // (required) github id
@@ -21,7 +22,7 @@ export interface ProfileCardProps {
 }
 
 const ProfileCard = (props: ProfileCardProps) => {
-  const { width, height, color, name, id, profileSrc, repositoryCount, followerCount, followingCount, introduce, isCircleImage } = props;
+  const { width, height, background, color, name, id, profileSrc, repositoryCount, followerCount, followingCount, introduce, isCircleImage } = props;
   const [profile, setProfile] = useState<any>(null);
   const [isMount, setIsMount] = useState(false);
 
@@ -58,7 +59,7 @@ const ProfileCard = (props: ProfileCardProps) => {
         />
       )}
       {(props.isSSR || isMount) && (
-        <ProfileCardStyled width={width} height={height} color={color} onClick={props.onClickCard || onClickCard} isCircleImage={isCircleImage}>
+        <ProfileCardStyled width={width} height={height} background={background} color={color} onClick={props.onClickCard || onClickCard} isCircleImage={isCircleImage}>
           <div className="left">
             <div className="image_area">
               <img src={(profile && profile.avatar_url) || profileSrc} alt="profile image" />
@@ -94,6 +95,7 @@ const ProfileCard = (props: ProfileCardProps) => {
 ProfileCard.defaultProps = {
   width: "600px",
   height: "280px",
+  background: "#FFFFFF",
   color: "#26273B",
   name: "Jae Cheol Sim",
   id: "simsimjae",
